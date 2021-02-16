@@ -7,7 +7,7 @@ import './css/style.css';
 function App() {
   return (
     <div className="gss-app">
-      <Login />
+      <Login/>
     </div>
   )
 }
