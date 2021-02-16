@@ -1,0 +1,34 @@
+{
+	"manifest_version": 2,
+
+	"name": "MyGuide Extension",
+	"description": "MyGuide Extension",
+	"version": "0.0.1",
+
+	"browser_action": {
+		"default_title": "Open the popup"
+	},
+	"content_scripts": [{
+		"matches": ["<all_urls>"],
+		"all_frames": true,
+		"js": ["./jquery.js",
+		  "./player.js"
+		]
+	  }],
+	"background": {
+		"scripts": ["./background.js"]
+	},
+	"icons": {
+		"16": "/common/img/gicon16.png",
+		"48": "/common/img/gicon48.png",
+		"128": "/common/img/gicon128.png"
+	},
+	"permissions": [
+		"activeTab"
+	  ],
+	  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+	  "web_accessible_resources": [
+		"index.html",
+		"/static/*"
+	  ]
+}
