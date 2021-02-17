@@ -4,15 +4,15 @@ import LogoAdmin from "../assets/images/logo-admin.png";
 
 function Header() {
     return (
-        <div class='gss-header-banner-wrapper gss-position-relative'>
-            <div class='gss-inline-block-vm'>
+        <div className='gss-header-banner-wrapper gss-position-relative'>
+            <div className='gss-inline-block-vm'>
                 <LoginHeader />
             </div>
             <img
                 // src={LogoAdmin}
                 arl='logo-admin'
                 id='gss-header-widget-icon'
-                class='gss-header-widget-icon'
+                className='gss-header-widget-icon'
             />
         </div>
     );
